@@ -7,10 +7,11 @@
 html {
     scroll-behavior: smooth;
 }
-body
-{
+
+body {
     background-color: black;
 }
+
 /*this is for header*/
 header {
     z-index: 1;
@@ -32,8 +33,11 @@ header {
     color: gold;
     font-family: segoe UI;
 }
-.btncheck /*responsive navigation bar*/
-{
+
+.btncheck
+
+/*responsive navigation bar*/
+    {
     color: white;
     font-size: 30px;
     float: right;
@@ -41,12 +45,13 @@ header {
     cursor: pointer;
     display: none;
 }
-#check
-{
+
+#check {
     display: none;
     float: right;
     margin-top: 30px;
 }
+
 /*Navigation bar*/
 .nav-bar ul {
     float: right;
@@ -156,9 +161,16 @@ header {
     text-transform: uppercase;
 }
 
-.about-text #facts {
-    margin-top: 20px;
-    color: black;
+.about-gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.about-gif img {
+    height: 350px;
+    margin-right: 25%;
 }
 
 .about-text ol {
@@ -171,6 +183,7 @@ header {
     margin-top: 10px;
     font-style: italic;
 }
+
 /*picture graduate*/
 .pic-mike {
     margin-top: 20px;
@@ -187,6 +200,7 @@ header {
     float: right;
     width: 400px;
 }
+
 .about-text2 .creative {
     margin-top: 20px;
     color: black;
@@ -232,7 +246,8 @@ header {
 }
 
 
-#error_m { /*this is error message in form validation*/
+#error_m {
+    /*this is error message in form validation*/
     position: absolute;
     top: 5%;
     background-color: red;
@@ -241,6 +256,7 @@ header {
     width: 20%;
     border-radius: 50px;
 }
+
 /*for contact input*/
 .form-contact form input {
     font-size: 17px;
@@ -285,13 +301,12 @@ header {
 
 /*contact information*/
 .contact-info {
-    
+
     margin-top: 30px;
     width: 100%;
 }
 
-.email 
-{
+.email {
     background-color: white;
     width: 43%;
     height: 70px;
@@ -301,20 +316,17 @@ header {
     float: left;
 }
 
-.email h1 
-{
+.email h1 {
     color: gray;
     font-size: 20px;
 }
 
-.email a 
-{
+.email a {
     font-size: 18px;
     color: blue
 }
 
-.phone 
-{
+.phone {
     background-color: white;
     width: 43%;
     height: 70px;
@@ -324,20 +336,17 @@ header {
     float: left;
 }
 
-.phone h1 
-{
+.phone h1 {
     color: gray;
     font-size: 20px;
 }
 
-.phone p 
-{
+.phone p {
     font-size: 18px;
     color: black
 }
 
-.facebook 
-{
+.facebook {
     margin-top: 20px;
     background-color: white;
     width: 43%;
@@ -348,14 +357,12 @@ header {
     float: left;
 }
 
-.facebook h1 
-{
+.facebook h1 {
     color: gray;
     font-size: 20px;
 }
 
-.fb-logo 
-{
+.fb-logo {
     height: 40px;
     width: 40px;
     background-color: gray;
@@ -365,22 +372,19 @@ header {
     margin-top: 3px;
 }
 
-.fb-logo:hover 
-{
+.fb-logo:hover {
     background-color: blue;
     transition: 0.5s;
     transform: scale(1.1);
 }
 
-.fb-logo i 
-{
+.fb-logo i {
     font-size: 22px;
     line-height: 40px;
     color: white;
 }
 
-.address 
-{
+.address {
     margin-top: 20px;
     background-color: white;
     width: 43%;
@@ -391,28 +395,25 @@ header {
     float: left;
 }
 
-.address h1 
-{
+.address h1 {
     color: gray;
     font-size: 20px;
 }
 
-.phone p 
-{
+.phone p {
     font-size: 18px;
     color: black
 }
+
 /*this is footer section*/
-footer 
-{
+footer {
     height: 17vh;
     background-color: black;
     padding-left: 12%;
     padding-right: 12%;
 }
 
-.footer-holder 
-{
+.footer-holder {
     height: 60px;
     width: 100%;
     display: flex;
@@ -421,53 +422,45 @@ footer
     border-bottom: 1px solid gray;
 }
 
-#footer-add h1 
-{
+#footer-add h1 {
     color: white;
     font-size: 15px;
     font-family: sans-serif;
 }
 
-#footer-add p 
-{
+#footer-add p {
     color: white;
 }
 
-#footer-phone h1 
-{
+#footer-phone h1 {
     color: white;
     font-size: 15px;
     font-family: sans-serif;
 }
 
-#footer-phone p 
-{
+#footer-phone p {
     color: white;
     font-size: 15px;
 }
 
-#footer-email h1 
-{
-    color: white;
-    font-size: 15px;
-    font-family: sans-serif;
-}
-
-#footer-email p 
-{
-    color: white;
-    font-size: 15px;
-}
-
-#footer-facebook h1 
-{
+#footer-email h1 {
     color: white;
     font-size: 15px;
     font-family: sans-serif;
 }
 
-.fb-logo2 
-{
+#footer-email p {
+    color: white;
+    font-size: 15px;
+}
+
+#footer-facebook h1 {
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.fb-logo2 {
     height: 35px;
     width: 35px;
     background-color: blue;
@@ -478,28 +471,24 @@ footer
     cursor: pointer;
 }
 
-.fb-logo2 i 
-{
+.fb-logo2 i {
     color: white;
     font-size: 20px;
     line-height: 35px;
 }
 
-#footer-text 
-{
+#footer-text {
     text-align: center;
 }
 
-#footer-text p 
-{
+#footer-text p {
     color: white;
     padding-top: 10px;
 }
 
 
 /*media query for responsive website*/
-@media (max-width: 1200px) 
-{   
+@media (max-width: 1200px) {
     #about {
         height: 900px;
         background-color: darkgray;
@@ -522,6 +511,14 @@ footer
         padding-right: 10px;
     }
 
+    .about-gif {
+        height: 220px;
+    }
+
+    .about-gif img {
+        margin-right: 0%;
+    }
+
     .pic-mike {
         margin-top: 20px;
         float: none;
@@ -539,10 +536,10 @@ footer
         padding-left: 12%;
         padding-right: 12%;
         background-color: #404040;
-        
-    
+
+
     }
-    
+
     .form-contact {
         position: relative;
         padding-left: 25px;
@@ -550,7 +547,7 @@ footer
         text-align: center;
 
     }
-    
+
     #error_m {
         position: absolute;
         background-color: red;
@@ -560,7 +557,7 @@ footer
         border-radius: 50px;
         top: 1%;
     }
-    
+
     .form-contact form textarea {
         margin-top: 20px;
         width: 97%;
@@ -572,9 +569,9 @@ footer
     }
 
 }
+
 /*resolution if below 1000px width*/
-@media (max-width: 1000px) 
-{
+@media (max-width: 1000px) {
     #about {
         height: 1000px;
     }
@@ -583,15 +580,13 @@ footer
 
 
 /*resolution if below 850px width*/
-@media (max-width: 850px) 
-{
+@media (max-width: 850px) {
     .about-text2 .creative {
         padding-left: 10px;
         padding-right: 10px;
     }
 
-    #contact
-    {
+    #contact {
         height: 950px;
     }
 
@@ -609,7 +604,7 @@ footer
         text-align: center;
 
     }
-    
+
     #error_m {
         position: absolute;
         background-color: red;
@@ -619,7 +614,7 @@ footer
         border-radius: 50px;
         top: 1%;
     }
-    
+
     .email {
         background-color: white;
         width: 43%;
@@ -630,17 +625,17 @@ footer
         float: none;
         margin-bottom: 20px;
     }
-    
+
     .email h1 {
         color: gray;
         font-size: 20px;
     }
-    
+
     .email a {
         font-size: 11px;
         color: blue
     }
-    
+
     .phone {
         background-color: white;
         width: 43%;
@@ -650,17 +645,17 @@ footer
         padding-top: 10px;
         float: none;
     }
-    
+
     .phone h1 {
         color: gray;
         font-size: 20px;
     }
-    
+
     .phone p {
         font-size: 18px;
         color: black
     }
-    
+
     .facebook {
         margin-top: 20px;
         background-color: white;
@@ -671,12 +666,12 @@ footer
         padding-top: 10px;
         float: none;
     }
-    
+
     .facebook h1 {
         color: gray;
         font-size: 20px;
     }
-    
+
     .fb-logo {
         height: 40px;
         width: 40px;
@@ -686,19 +681,19 @@ footer
         cursor: pointer;
         margin-top: 3px;
     }
-    
+
     .fb-logo:hover {
         background-color: blue;
         transition: 0.5s;
         transform: scale(1.1);
     }
-    
+
     .fb-logo i {
         font-size: 22px;
         line-height: 40px;
         color: white;
     }
-    
+
     .address {
         margin-top: 20px;
         background-color: white;
@@ -709,12 +704,12 @@ footer
         padding-top: 10px;
         float: none;
     }
-    
+
     .address h1 {
         color: gray;
         font-size: 20px;
     }
-    
+
     .address p {
         font-size: 11px;
         color: black
@@ -725,7 +720,7 @@ footer
     footer {
         height: 250px;
     }
-    
+
     .footer-holder {
         height: 150px;
         border-bottom: 1px solid gray;
@@ -733,28 +728,27 @@ footer
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
-    #footer-phone
-    {
+
+    #footer-phone {
         margin-left: 50%;
     }
-    #footer-facebook
-    {
+
+    #footer-facebook {
         margin-left: 50%;
     }
 }
+
 /*resolution if below 600px width*/
-@media (max-width: 600px)
-{
-    #about
-    {
+@media (max-width: 600px) {
+    #about {
         height: 1050px;
     }
-    .btncheck
-    {
+
+    .btncheck {
         display: block;
     }
-    ul
-    {
+
+    ul {
         position: fixed;
         width: 100%;
         height: 25%;
@@ -764,39 +758,38 @@ footer
         background-color: #2c3e50;
         transition: all .5s;
     }
-   
-    nav ul li a
-    {
+
+    nav ul li a {
         display: block;
         margin-top: 10px;
     }
-    
-    #check:checked ~ ul
-    {
+
+    #check:checked~ul {
         right: 0;
     }
+
     .form-contact form input {
         font-size: 12px;
     }
-    .form-contact form textarea
-    {
+
+    .form-contact form textarea {
         font-size: 12px;
     }
+
     .btn input[type="submit"] {
         font-size: 15px;
         padding: 10px 25px;
         width: 120px;
     }
 
-    footer
-    {
+    footer {
         height: 310px;
     }
 
     .form-contact {
         position: relative;
     }
-    
+
     #error_m {
         position: absolute;
         font-size: 9px;
@@ -808,87 +801,93 @@ footer
         height: 200px;
         text-align: center;
     }
-    #footer-phone
-    {
+
+    #footer-phone {
         margin-left: 0;
         margin-top: 20px;
-    }
-    #footer-facebook
-    {
-        margin-left: 0;
-        margin-top: 20px;    
-    }
-    .fb-logo2
-    {
-        margin-left: 45%;
-    }
-    #footer-email
-    {
-        
-        margin-top: 20px;
-    }
-    #footer-add
-    {
-        margin: 0%;    
     }
 
-    #footer-text
-    {
+    #footer-facebook {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .fb-logo2 {
+        margin-left: 45%;
+    }
+
+    #footer-email {
+
+        margin-top: 20px;
+    }
+
+    #footer-add {
+        margin: 0%;
+    }
+
+    #footer-text {
         margin-top: 20px;
         border-top: 1px solid gray;
     }
-    
+
 }
+
 /*resolution if below 450px width*/
-@media (max-width: 450px)
-{
-    #home
-    {
+@media (max-width: 450px) {
+    #home {
         width: 109%;
         height: 500px;
     }
-    #about
-    {
+
+    #about {
         width: 85%;
         height: 800px;
     }
-    #contact
-    {
+
+    #contact {
         width: 85%;
         height: 850px;
     }
-    footer
-    {
+
+    footer {
         width: 85%;
     }
-    
+
     .form-contact form input {
         font-size: 9px;
     }
-    .form-contact form textarea
-    {
+
+    .form-contact form textarea {
         margin-left: 20%;
         width: 70%;
         height: 100px;
     }
 
-    .mypc img
-    {
+    .mypc img {
         width: 250px;
     }
+
     .about-text {
         margin-top: 20px;
         width: 100%;
     }
+
     .about-text #hi-there {
         font-size: 40px;
     }
+
+    .about-gif img {
+        height: 330px;
+    }
+
     .about-text p {
         font-size: 13px;
     }
+
     .about-text span {
         font-size: 17px;
     }
+
     .about-text ol li {
         font-size: 13px;
     }
@@ -901,10 +900,11 @@ footer
     .about-text2 {
         width: 400px;
     }
+
     .about-text2 .creative {
         font-size: 13px;
     }
-    
+
     .about-text2 .creative a {
         font-size: 13px;
     }
@@ -916,7 +916,7 @@ footer
     .form-contact {
         position: relative;
     }
-    
+
     #error_m {
         position: absolute;
         background-color: red;
@@ -929,123 +929,113 @@ footer
     }
 
 }
-@media (max-width: 395px)
-{
-    #home
-    {
+
+@media (max-width: 395px) {
+    #home {
         width: 114%;
     }
-    #about
-    {
+
+    #about {
         width: 90%;
     }
-    #contact
-    {
+
+    #contact {
         width: 90%;
     }
-    footer
-    {
+
+    footer {
         width: 90%;
     }
 }
 
-@media (max-width: 390px)
-{
-    #home
-    {
+@media (max-width: 390px) {
+    #home {
         width: 114.5%;
     }
-    #about
-    {
+
+    #about {
         width: 90.5%;
     }
-    #contact
-    {
+
+    #contact {
         width: 90.5%;
     }
-    footer
-    {
+
+    footer {
         width: 90.5%;
     }
 }
 
-@media (max-width: 375px)
-{
-    #home
-    {
+@media (max-width: 375px) {
+    #home {
         width: 119%;
     }
-    #about
-    {
+
+    #about {
         width: 95%;
     }
-    #contact
-    {
+
+    #contact {
         width: 95%;
     }
-    footer
-    {
+
+    footer {
         width: 95%;
     }
 }
 
-@media (max-width: 360px)
-{
-    #home
-    {
+@media (max-width: 360px) {
+    #home {
         width: 123%;
     }
-    #about
-    {
+
+    #about {
         width: 99%;
     }
-    #contact
-    {
+
+    #contact {
         width: 99%;
     }
-    footer
-    {
+
+    footer {
         width: 99%;
     }
 }
 
-@media (max-width: 320px)
-{
-    #home
-    {
+@media (max-width: 320px) {
+    #home {
         width: 136.7%;
     }
-    #about
-    {
+
+    #about {
         width: 113%;
     }
-    #contact
-    {
+
+    #contact {
         width: 113%;
     }
-    footer
-    {
+
+    footer {
         width: 113%;
     }
 }
 
-@media (max-width: 280px)
-{
-    #home
-    {
-        width: 155%;
+@media (max-width: 280px) {
+    #home {
+        width: 157%;
     }
-    #about
-    {
-        width: 131%;
+
+    #about {
+        width: 133%;
     }
-    #contact
-    {
-        width: 131%;
+
+    #contact {
+        width: 133%;
     }
-    footer
-    {
-        width: 131%;
+
+    footer {
+        width: 133%;
     }
 }
+
 /*end of styling code*/
