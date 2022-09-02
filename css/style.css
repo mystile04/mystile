@@ -185,9 +185,14 @@ header {
 }
 
 /*picture graduate*/
+.pictext-container
+{
+    float: right;
+    text-align: center;
+}
+
 .pic-mike {
     margin-top: 20px;
-    float: right;
 }
 
 .pic-mike img {
@@ -197,7 +202,6 @@ header {
 }
 
 .about-text2 {
-    float: right;
     width: 400px;
 }
 
@@ -519,7 +523,10 @@ footer {
         margin-right: 0%;
         margin-top: 20px;
     }
-
+    .pictext-container
+    {
+        float: none;
+    }
     .pic-mike {
         margin-top: 20px;
         float: none;
