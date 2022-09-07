@@ -23,7 +23,6 @@ header {
     position: fixed;
     border-bottom: 1px solid darkslategray;
 }
-
 .logo {
     float: left;
     margin-top: 8px;
@@ -33,7 +32,6 @@ header {
     color: gold;
     font-family: segoe UI;
 }
-
 /*for mobile bar*/
 label #open,
 label #close {
@@ -44,24 +42,20 @@ label #close {
     cursor: pointer;
     display: none;
 }
-
 #check {
     display: none;
     float: right;
     margin-top: 30px;
 }
-
 /*Navigation bar*/
 .nav-bar ul {
     float: right;
     padding-top: 25px;
 }
-
 .nav-bar ul li {
     display: inline;
     margin-left: 55px;
 }
-
 .nav-bar ul li a {
     position: relative;
     color: gray;
@@ -69,7 +63,6 @@ label #close {
     text-decoration: none;
     list-style: none;
 }
-
 .nav-bar ul li a::after {
     content: '';
     position: absolute;
@@ -80,55 +73,45 @@ label #close {
     bottom: -8px;
     transition: 0.5s;
 }
-
 .nav-bar ul li a:hover::after {
     width: 100%;
 }
-
 .nav-bar ul li a:hover {
     color: gold;
 }
-
 
 /*this is home section*/
 #home {
     height: 650px;
     background-color: #404040;
 }
-
 .mypc {
     display: flex;
     justify-content: center;
 }
-
 .mypc img {
     width: 400px;
     margin-top: 80px;
 }
-
 .home-text {
     text-align: center;
 }
-
 .home-text h1 {
     text-transform: uppercase;
     font-size: 50px;
     font-family: serif;
     color: silver;
 }
-
 .home-text p {
     font-size: 17px;
     color: whitesmoke;
 }
-
 .home-text span {
     font-size: 20px;
     text-transform: uppercase;
     font-family: monospace;
     color: wheat;
 }
-
 .resume {
     margin-top: 10px;
     height: 40px;
@@ -136,7 +119,6 @@ label #close {
     justify-content: center;
     align-items: center;
 }
-
 .resume-border {
     position: relative;
     background-color: black;
@@ -144,18 +126,15 @@ label #close {
     border-radius: 50px;
     cursor: pointer;
 }
-
 .resume a {
     font-size: 15px;
     text-transform: uppercase;
     text-decoration: none;
     color: blanchedalmond;
 }
-
 .resume span {
     color: red;
 }
-
 .resume-border:hover {
     background-color: #404040;
     border: solid white 1px;
@@ -170,91 +149,75 @@ label #close {
     padding-right: 15%;
     padding-top: 30px;
 }
-
 /*about logo*/
 .about-logo {
     text-align: center;
 }
-
 .about-logo h2 {
     font-size: 25px;
     text-transform: uppercase;
     font-family: serif;
     letter-spacing: 2px;
 }
-
 .about-text {
     margin-top: 20px;
     width: 400px;
     float: left;
 }
-
 .about-text #hi-there {
     font-size: 50px;
     font-family: bold;
     color: gold;
 }
-
 .about-text p {
     font-size: 20px;
     font-style: italic;
 }
-
 .about-text span {
     font-size: 25px;
     font-family: sans-serif;
     text-transform: uppercase;
 }
-
 .about-gif {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 300px;
 }
-
 .about-gif img {
     height: 350px;
     margin-right: 25%;
 }
-
 .about-text ol {
     margin-left: 15px;
     list-style: none;
 }
-
 .about-text ol li {
     font-size: 18px;
     margin-top: 10px;
     font-style: italic;
 }
-
 /*picture graduate*/
 .pictext-container {
     float: right;
     text-align: center;
 }
-
 .pic-mike {
     margin-top: 20px;
 }
-
 .pic-mike img {
     width: 370px;
     height: 400px;
     clip-path: circle();
 }
-
 .about-text2 {
     width: 400px;
 }
-
 .about-text2 .creative {
     margin-top: 20px;
     color: black;
     font-size: 20px;
 }
-
 .about-text2 .creative a {
     color: blue;
     text-transform: uppercase;
@@ -271,18 +234,15 @@ label #close {
     padding-left: 12%;
     padding-right: 12%;
 }
-
 .work-logo {
     text-align: center;
 }
-
 .work-logo h2 {
     font-size: 25px;
     text-transform: uppercase;
     font-family: serif;
     letter-spacing: 2px;
 }
-
 .work-container {
     position: absolute;
     width: 40%;
@@ -291,23 +251,19 @@ label #close {
     top: 10%;
     right: 30%;
 }
-
 .img-proj1 {
     text-align: center;
     padding-top: 5px;
     position: relative;
 }
-
 .img-proj1 img {
     width: 90%;
     height: auto;
 }
-
 .img-proj1:hover {
     transform: scale(1.02);
     transition: .3s;
 }
-
 .icon-container {
     position: absolute;
     top: 40%;
@@ -316,7 +272,6 @@ label #close {
     justify-content: space-between;
     width: 20%;
 }
-
 .preview {
     background-color: white;
     height: 35px;
@@ -325,13 +280,11 @@ label #close {
     text-align: center;
     cursor: pointer;
 }
-
 .preview a i {
     color: red;
     font-size: 20px;
     line-height: 35px;
 }
-
 .gitcode {
     background-color: #404040;
     height: 35px;
@@ -340,24 +293,19 @@ label #close {
     text-align: center;
     cursor: pointer;
 }
-
 .gitcode a i {
     color: white;
     font-size: 20px;
     line-height: 35px;
 }
-
 .preview:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
-
 .gitcode:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
-
-
 
 /*this is contact section*/
 #contact {
@@ -368,7 +316,6 @@ label #close {
     position: relative;
 
 }
-
 .contact-me {
     height: 70px;
     display: flex;
@@ -376,19 +323,16 @@ label #close {
     justify-content: center;
 
 }
-
 .contact-me h1 {
     font-size: 35px;
     text-transform: uppercase;
     font-family: serif;
     letter-spacing: 2px;
 }
-
 .form-contact {
     width: 100%;
     text-align: center;
 }
-
 #error_m {
     /*this is error message in form validation*/
     position: absolute;
@@ -400,7 +344,6 @@ label #close {
     left: 21%;
     border-radius: 50px;
 }
-
 /*for contact input*/
 .form-contact form input {
     font-size: 17px;
@@ -408,7 +351,6 @@ label #close {
     width: 35%;
 
 }
-
 .form-contact form textarea {
     margin-top: 20px;
     width: 75%;
@@ -417,13 +359,11 @@ label #close {
     padding-left: 10px;
     font-size: 20px;
 }
-
 /*contact button*/
 .btn {
     text-align: center;
     width: 100%;
 }
-
 .btn input[type="submit"] {
     font-size: 20px;
     padding: 10px 25px;
@@ -435,14 +375,12 @@ label #close {
     margin-right: 20px;
     width: 200px;
 }
-
 .btn input:hover {
     transition: .5s;
     background-color: red;
     transform: scale(1.1);
 
 }
-
 /*contact information*/
 .contact-info {
 
@@ -453,7 +391,6 @@ label #close {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
-
 .email,
 .messenger {
     background-color: white;
@@ -463,7 +400,6 @@ label #close {
     padding-left: 10px;
     padding-top: 10px;
 }
-
 .phone,
 .address {
     background-color: white;
@@ -473,7 +409,6 @@ label #close {
     padding-left: 10px;
     padding-top: 10px;
 }
-
 .email h1,
 .phone h1,
 .messenger h1,
@@ -481,28 +416,23 @@ label #close {
     color: gray;
     font-size: 20px;
 }
-
 .email p {
     font-size: 18px;
     color: blue
 }
-
 .phone p {
     font-size: 18px;
     color: black
 }
-
 .ms-logo a {
     font-size: 22px;
     line-height: 42px;
     color: white;
 }
-
 .address p {
     font-size: 18px;
     color: black
 }
-
 .ms-logo {
     height: 40px;
     width: 40px;
@@ -512,7 +442,6 @@ label #close {
     margin-top: 3px;
     background-color: blueviolet;
 }
-
 .ms-logo:hover {
     background-color: darkblue;
     transition: 0.5s;
@@ -525,7 +454,6 @@ footer {
     padding-left: 15%;
     padding-right: 15%;
 }
-
 .footer-holder {
     height: 60px;
     width: 100%;
@@ -534,7 +462,6 @@ footer {
     padding-top: 10px;
     border-bottom: 1px solid gray;
 }
-
 #footer-add h1,
 #footer-phone h1,
 #footer-email h1,
@@ -543,20 +470,17 @@ footer {
     font-size: 15px;
     font-family: sans-serif;
 }
-
 #footer-add p,
 #footer-phone p,
 #footer-email p {
     color: white;
     font-size: 15px;
 }
-
 .socmed-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .fb-logo2 {
     height: 25px;
     width: 25px;
@@ -566,7 +490,6 @@ footer {
     cursor: pointer;
     margin-top: 3px;
 }
-
 .fb-logo2 i,
 .in-logo2 i,
 .gh-logo2 i {
@@ -574,7 +497,6 @@ footer {
     font-size: 13px;
     line-height: 25px;
 }
-
 .in-logo2 {
     height: 25px;
     width: 25px;
@@ -584,7 +506,6 @@ footer {
     cursor: pointer;
     margin-top: 3px;
 }
-
 .gh-logo2 {
     height: 25px;
     width: 25px;
@@ -594,18 +515,15 @@ footer {
     cursor: pointer;
     margin-top: 3px;
 }
-
 .fb-logo2:hover,
 .in-logo2:hover,
 .gh-logo2:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
-
 #footer-text {
     text-align: center;
 }
-
 #footer-text p {
     color: white;
     padding-top: 10px;
@@ -617,13 +535,10 @@ footer {
         padding-left: 20%;
         padding-right: 20%;
     }
-
     footer {
         padding-left: 20%;
         padding-right: 20%;
     }
-
-
 }
 
 @media (max-width: 1999px) {
@@ -631,7 +546,6 @@ footer {
         padding-left: 17%;
         padding-right: 17%;
     }
-
     footer {
         padding-left: 17%;
         padding-right: 17%;
@@ -643,8 +557,6 @@ footer {
         padding-left: 15%;
         padding-right: 15%;
     }
-
-
 }
 
 @media (max-width: 1200px) {
@@ -655,55 +567,45 @@ footer {
         padding-right: 12%;
         padding-top: 30px;
     }
-
     .about-text {
         margin-top: 10px;
         float: none;
         width: 100%;
         text-align: center;
     }
-
     .about-text p {
         font-size: 20px;
         padding-left: 10px;
         padding-right: 10px;
     }
-
     .about-gif {
         height: 220px;
     }
-
     .about-gif img {
         margin-right: 0%;
         margin-top: 20px;
     }
-
     .pictext-container {
         float: none;
     }
-
     .pic-mike {
         margin-top: 20px;
     }
-
     .about-text2 {
         width: 100%;
         text-align: center;
     }
-
     #contact {
         height: 750px;
         padding-left: 12%;
         padding-right: 12%;
     }
-
     #error_m {
         font-size: 13px;
         width: 13%;
         left: 5%;
         top: 9%;
     }
-
     .form-contact form textarea {
         margin-top: 20px;
         width: 75%;
@@ -714,7 +616,6 @@ footer {
         font-size: 20px;
         display: block;
     }
-
 }
 
 /*resolution if below 1000px width*/
@@ -722,13 +623,10 @@ footer {
     #about {
         height: 1000px;
     }
-
     .email p {
         font-size: 15px;
     }
-
 }
-
 
 /*resolution if below 850px width*/
 @media (max-width: 850px) {
@@ -736,32 +634,26 @@ footer {
         padding-left: 10px;
         padding-right: 10px;
     }
-
     .preview {
         height: 20px;
         width: 20px;
     }
-
     .preview a i {
         color: red;
         font-size: 12px;
         line-height: 20px;
     }
-
     .gitcode {
         height: 20px;
         width: 20px;
     }
-
     .gitcode a i {
         font-size: 12px;
         line-height: 20px;
     }
-
     #contact {
         height: 950px;
     }
-
     .contact-info {
         padding-top: 10px;
         margin-top: 30px;
@@ -770,30 +662,25 @@ footer {
         width: 100%;
         height: 40%;
     }
-
     .form-contact {
         position: relative;
         width: 100%;
     }
-
     .form-contact form input {
         display: block;
         margin-left: 30%;
         margin-top: 5px;
         font-size: 15px;
     }
-
     .btn input[type="submit"] {
         margin-left: 33%;
     }
-
     #error_m {
 
         font-size: 10px;
         top: 1%;
         left: 11%;
     }
-
     .email {
         background-color: white;
         width: 43%;
@@ -803,17 +690,14 @@ footer {
         padding-top: 10px;
         margin-bottom: 20px;
     }
-
     .email h1 {
         color: gray;
         font-size: 20px;
     }
-
     .email p {
         font-size: 11px;
         color: blue
     }
-
     .phone {
         background-color: white;
         width: 43%;
@@ -822,17 +706,14 @@ footer {
         padding-left: 10px;
         padding-top: 10px;
     }
-
     .phone h1 {
         color: gray;
         font-size: 20px;
     }
-
     .phone p {
         font-size: 18px;
         color: black
     }
-
     .messenger {
         margin-top: 20px;
         background-color: white;
@@ -842,12 +723,10 @@ footer {
         padding-left: 10px;
         padding-top: 10px;
     }
-
     .messenger h1 {
         color: gray;
         font-size: 20px;
     }
-
     .ms-logo {
         height: 40px;
         width: 40px;
@@ -857,19 +736,16 @@ footer {
         cursor: pointer;
         margin-top: 3px;
     }
-
     .ms-logo:hover {
         background-color: darkblue;
         transition: 0.5s;
         transform: scale(1.1);
     }
-
     .ms-logo i {
         font-size: 22px;
         line-height: 40px;
         color: white;
     }
-
     .address {
         margin-top: 20px;
         background-color: white;
@@ -879,21 +755,17 @@ footer {
         padding-left: 10px;
         padding-top: 10px;
     }
-
     .address h1 {
         color: gray;
         font-size: 20px;
     }
-
     .address p {
         font-size: 11px;
         color: black
     }
-
     footer {
         height: 250px;
     }
-
     .footer-holder {
         height: 150px;
         border-bottom: 1px solid gray;
@@ -901,15 +773,12 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
-
     #footer-phone {
         margin-left: 50%;
     }
-
     #footer-socmed {
         margin-left: 50%;
     }
-
     .socmed-container {
         margin-right: 30%;
     }
@@ -920,11 +789,9 @@ footer {
     #about {
         height: 1080px;
     }
-
     label #open {
         display: block;
     }
-
     ul {
         position: fixed;
         width: 100%;
@@ -935,80 +802,63 @@ footer {
         background-color: #2c3e50;
         transition: all .5s;
     }
-
     nav ul li a {
         display: block;
         margin-top: 10px;
     }
-
     .nav-bar ul li a:hover::after {
         width: 0%;
     }
-
     #check:checked~ul {
         right: 0;
     }
-
     #check:checked~label #open {
         display: none;
     }
-
     #check:checked~label #close {
         display: block;
     }
-
     .form-contact form input {
         font-size: 12px;
     }
-
     .form-contact form textarea {
         font-size: 12px;
     }
-
     .btn input[type="submit"] {
         font-size: 15px;
         padding: 10px 25px;
         width: 120px;
     }
-
     footer {
         height: 310px;
     }
-
     #error_m {
         font-size: 9px;
         width: 13%;
     }
-
     .footer-holder {
         display: inline;
         height: 200px;
         text-align: center;
     }
-
     #footer-phone {
         margin-left: 0;
         margin-top: 20px;
     }
-
     #footer-socmed {
         margin-left: 0;
         margin-top: 20px;
     }
-
     .fb-logo2 {
         margin-left: 45%;
     }
-
     #footer-email {
 
         margin-top: 20px;
     }
-
     #footer-add {
         margin: 0%;
     }
-
     #footer-text {
         margin-top: 20px;
         border-top: 1px solid gray;
@@ -1021,7 +871,6 @@ footer {
         width: 120%;
         height: 500px;
     }
-
     #about {
         width: 95%;
         height: 840px;
@@ -1029,106 +878,85 @@ footer {
     #mywork {
         width: 95%;
     }
-
     #contact {
         width: 95%;
         height: 850px;
     }
-
     .preview {
+        background-color: lightgray;
         height: 15px;
         width: 15px;
     }
-
     .preview a i {
         color: red;
         font-size: 8px;
         line-height: 15px;
     }
-
     .gitcode {
+        background-color: lightgray;
         height: 15px;
         width: 15px;
     }
-
     .gitcode a i {
-        color: white;
+        color: #404040;
         font-size: 8px;
         line-height: 15px;
     }
-
     footer {
         width: 85%;
     }
-
     .form-contact form input {
         font-size: 9px;
     }
-
     .form-contact form textarea {
         margin-left: 14%;
         width: 70%;
         height: 100px;
     }
-
     .mypc img {
         width: 250px;
     }
-
     .about-text {
         margin-top: 20px;
         width: 100%;
     }
-
     .about-text #hi-there {
         font-size: 40px;
     }
-
     .about-gif img {
         height: 330px;
     }
-
     .about-text p {
         font-size: 13px;
     }
-
     .about-text span {
         font-size: 17px;
     }
-
     .about-text ol li {
         font-size: 13px;
     }
-
     .pic-mike img {
         width: 260px;
         height: 290px;
     }
-
     .about-text2 {
         width: 400px;
     }
-
     .about-text2 p {
         margin-right: 0%;
     }
-
     .about-text2 .creative {
         font-size: 13px;
     }
-
     .about-text2 .creative a {
         font-size: 13px;
     }
-
     .email p {
         font-size: 10px;
     }
-
     .form-contact {
         position: relative;
     }
-
     #error_m {
         font-size: 8px;
         left: 10%;
@@ -1140,18 +968,15 @@ footer {
     #home {
         width: 121%;
     }
-
     #about {
         width: 97%;
     }
     #mywork {
         width: 97%;
     }
-
     #contact {
         width: 97%;
     }
-
     footer {
         width: 90%;
     }
@@ -1161,18 +986,15 @@ footer {
     #home {
         width: 145%;
     }
-
     #about {
         width: 121%;
     }
     #mywork {
         width: 121%;
     }
-
     #contact {
         width: 121%;
     }
-
     footer {
         width: 113%;
     }
@@ -1182,11 +1004,9 @@ footer {
     #home {
         width: 165%;
     }
-
     #about {
         width: 140%;
     }
-
     .about-text2 p {
         margin-right: 6%;
     }
@@ -1196,7 +1016,6 @@ footer {
     #contact {
         width: 140%;
     }
-
     footer {
         width: 133%;
     }
