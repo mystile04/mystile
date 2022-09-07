@@ -9,6 +9,7 @@
     <link href="css/style.css" rel="stylesheet">
     <script src="js/jscript.js"></script>
     <link href="css/all.min.css" rel="stylesheet">
+    <link href="pictures/mypic.png" rel="icon">
 </head>
 
 <body>
@@ -19,15 +20,20 @@
         </div>
         <nav class="nav-bar">
             <input type="checkbox" id="check">
-            <label for="check" class="btncheck"><i class="fa-solid fa-bars"></i></label>
+            <label for="check">
+                <i class="fa-solid fa-bars" id="open"></i>
+                <i class="fa-solid fa-xmark" id="close"></i>
+            </label>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About me</a></li>
+                <li><a href="#mywork">My work</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- home section -->
     <section id="home">
         <div class="mypc">
             <img src="pictures/mypic.png">
@@ -37,8 +43,15 @@
             <p>A Font End-Developer who loves</p>
             <p>making presentable <span>website</span></p>
         </div>
+        <div class="resume">
+            <div class="resume-border">
+                <a href="file:///C:/Users/ACER/Desktop/MICHAEL%20JOHN%20ALFONSO(resume).pdf">my resume
+                    (<span>pdf</span>)</a>
+            </div>
+        </div>
     </section>
 
+    <!-- about section -->
     <section id="about">
         <div class="about-logo">
             <h2>About me</h2>
@@ -49,7 +62,7 @@
             <p>My name is Michael John Alfonso, but you can call me <span>mike.</span>
                 Graduate of Bachelor of Science in Information Technology. And I am currently
                 looking for great opportunity to improve my web programming skills.
-                It is a pleasure for me to work in a workplace that will help me gain more experience. 
+                It is a pleasure for me to work in a workplace that will help me gain more experience.
             </p>
             <div class="about-gif">
                 <img src="pictures/CODEs-unscreen.gif">
@@ -61,7 +74,7 @@
                 <img src="pictures/Alfonso, Michael John DC..jpg">
             </div>
             <div class="about-text2">
-                <p class="creative">If you are interested to work with me, i would love
+                <p class="creative">If you are interested to work with me, I would love
                     to hear from you. Please do contact me here <a href="#contact">contact</a>
                 </p>
             </div>
@@ -69,6 +82,28 @@
 
     </section>
 
+    <!-- my work section -->
+    <section id="mywork">
+        <div class="work-logo">
+            <h2>my work</h2>
+        </div>
+        <div class="work-container">
+            <div class="img-proj1">
+                <img src="pictures/proj1.png">
+                <div class="icon-container">
+                    <div class="preview">
+                        <a href="https://mystile04.github.io/project1/"><i class="fa-solid fa-eye"></i></a>
+                    </div>
+                    <div class="gitcode">
+                        <a href="https://github.com/mystile04/project1"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- contact section -->
     <section id="contact">
         <div class="contact-me">
             <h1>contact me</h1>
@@ -76,10 +111,10 @@
         <div class="form-contact">
             <form id="my-form" onsubmit="return validation()">
                 <div id="error_m"></div>
-                <input id="fname" placeholder="Enter your Firstname" type="text">
-                <input id="lname" placeholder="Enter your Lastname" type="text">
-                <input id="email" placeholder="Enter your Email" type="email">
-                <input id="phone" placeholder="Enter your phone Number" type="number">
+                <input id="fname" placeholder="Enter Firstname" type="text">
+                <input id="lname" placeholder="Enter Lastname" type="text">
+                <input id="email" placeholder="Enter Email" type="email">
+                <input id="phone" placeholder="Enter phone Number" type="number">
                 <textarea id="message" placeholder="Message(Optional)" type="text"></textarea>
                 <div class="btn">
                     <input type="submit">
@@ -90,16 +125,17 @@
         <div class="contact-info">
             <div class="email">
                 <h1>Email Me</h1>
-                <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox">it.michaeljohnalfonso@gmail.com</a>
+                <p>it.michaeljohnalfonso@gmail.com</p>
             </div>
             <div class="phone">
                 <h1>Call/Text Me</h1>
                 <p>0995 390 5621</p>
             </div>
-            <div class="facebook">
-                <h1>My Facebook</h1>
-                <div class="fb-logo">
-                    <a href="https://www.facebook.com/michaeljohn.alfonso.7"><i class="fa-brands fa-facebook-f"></i></a>
+            <div class="messenger">
+                <h1>Message Me</h1>
+                <div class="ms-logo">
+                    <a href="https://www.messenger.com/t/100002251522469"><i
+                            class="fa-brands fa-facebook-messenger"></i></a>
                 </div>
             </div>
             <div class="address">
@@ -109,6 +145,7 @@
         </div>
     </section>
 
+    <!-- footer secion -->
     <footer>
         <div class="footer-holder">
             <div id="footer-add">
@@ -127,10 +164,20 @@
                 <p>it.michaeljohnalfonso@gmail.com</p>
             </div>
 
-            <div id="footer-facebook">
-                <h1>Facebook</h1>
-                <div class="fb-logo2">
-                    <a href="https://www.facebook.com/michaeljohn.alfonso.7"><i class="fa-brands fa-facebook-f"></i></a>
+            <div id="footer-socmed">
+                <h1>Social Media</h1>
+                <div class="socmed-container">
+                    <div class="fb-logo2">
+                        <a href="https://www.facebook.com/michaeljohn.alfonso.7"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                    <div class="in-logo2">
+                        <a href="https://github.com/mystile04"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="gh-logo2">
+                        <a href="https://www.linkedin.com/in/michael-alfonso-89797624a/"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
                 </div>
             </div>
         </div>

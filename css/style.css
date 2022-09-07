@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 html {
@@ -16,6 +15,7 @@ body {
 header {
     z-index: 1;
     background-image: url(../pictures/header-logo.jpg);
+    background-size: contain;
     padding-left: 5%;
     padding-right: 5%;
     height: 75px;
@@ -34,10 +34,9 @@ header {
     font-family: segoe UI;
 }
 
-.btncheck
-
-/*responsive navigation bar*/
-    {
+/*for mobile bar*/
+label #open,
+label #close {
     color: white;
     font-size: 30px;
     float: right;
@@ -64,15 +63,30 @@ header {
 }
 
 .nav-bar ul li a {
+    position: relative;
     color: gray;
     font-size: 20px;
     text-decoration: none;
     list-style: none;
 }
 
+.nav-bar ul li a::after {
+    content: '';
+    position: absolute;
+    background-color: gold;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.nav-bar ul li a:hover::after {
+    width: 100%;
+}
+
 .nav-bar ul li a:hover {
     color: gold;
-    transition: 0.5s;
 }
 
 
@@ -83,18 +97,17 @@ header {
 }
 
 .mypc {
-    padding-top: 100px;
     display: flex;
     justify-content: center;
 }
 
 .mypc img {
     width: 400px;
+    margin-top: 80px;
 }
 
 .home-text {
     text-align: center;
-    margin-top: 20px;
 }
 
 .home-text h1 {
@@ -116,13 +129,45 @@ header {
     color: wheat;
 }
 
+.resume {
+    margin-top: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-border {
+    position: relative;
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.resume a {
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+.resume span {
+    color: red;
+}
+
+.resume-border:hover {
+    background-color: #404040;
+    border: solid white 1px;
+    transition: .4s;
+}
 
 /*this is about section*/
 #about {
     height: 650px;
     background-color: darkgray;
-    padding-left: 12%;
-    padding-right: 12%;
+    padding-left: 15%;
+    padding-right: 15%;
     padding-top: 30px;
 }
 
@@ -185,8 +230,7 @@ header {
 }
 
 /*picture graduate*/
-.pictext-container
-{
+.pictext-container {
     float: right;
     text-align: center;
 }
@@ -218,6 +262,102 @@ header {
     text-decoration: underline;
 }
 
+/* work sectiob */
+#mywork {
+    height: 650px;
+    background-color: gray;
+    padding-top: 30px;
+    position: relative;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.work-logo {
+    text-align: center;
+}
+
+.work-logo h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: serif;
+    letter-spacing: 2px;
+}
+
+.work-container {
+    position: absolute;
+    width: 40%;
+    height: 85%;
+    background-color: wheat;
+    top: 10%;
+    right: 30%;
+}
+
+.img-proj1 {
+    text-align: center;
+    padding-top: 5px;
+    position: relative;
+}
+
+.img-proj1 img {
+    width: 90%;
+    height: auto;
+}
+
+.img-proj1:hover {
+    transform: scale(1.02);
+    transition: .3s;
+}
+
+.icon-container {
+    position: absolute;
+    top: 40%;
+    right: 41%;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.preview {
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.preview a i {
+    color: red;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.gitcode {
+    background-color: #404040;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.gitcode a i {
+    color: white;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.preview:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.gitcode:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
 
 /*this is contact section*/
 #contact {
@@ -245,19 +385,19 @@ header {
 }
 
 .form-contact {
-    padding-left: 25px;
-    width: 97%;
+    width: 100%;
+    text-align: center;
 }
-
 
 #error_m {
     /*this is error message in form validation*/
     position: absolute;
-    top: 5%;
+    top: 4.5%;
     background-color: red;
     font-size: 15px;
     text-align: center;
-    width: 20%;
+    width: 15%;
+    left: 21%;
     border-radius: 50px;
 }
 
@@ -265,13 +405,13 @@ header {
 .form-contact form input {
     font-size: 17px;
     padding: 10px;
-    width: 43%;
-    margin-right: 35px;
+    width: 35%;
+
 }
 
 .form-contact form textarea {
     margin-top: 20px;
-    width: 93.7%;
+    width: 75%;
     height: 120px;
     padding-top: 10px;
     padding-left: 10px;
@@ -281,7 +421,7 @@ header {
 /*contact button*/
 .btn {
     text-align: center;
-    width: 95%;
+    width: 100%;
 }
 
 .btn input[type="submit"] {
@@ -306,115 +446,84 @@ header {
 /*contact information*/
 .contact-info {
 
-    margin-top: 30px;
+    margin-top: 5%;
     width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
-.email {
+.email,
+.messenger {
     background-color: white;
-    width: 43%;
+    width: 70%;
     height: 70px;
-    margin-left: 25px;
+    margin-left: 24%;
     padding-left: 10px;
     padding-top: 10px;
-    float: left;
 }
 
-.email h1 {
-    color: gray;
-    font-size: 20px;
-}
-
-.email a {
-    font-size: 18px;
-    color: blue
-}
-
-.phone {
-    background-color: white;
-    width: 43%;
-    height: 70px;
-    margin-left: 40px;
-    padding-left: 10px;
-    padding-top: 10px;
-    float: left;
-}
-
-.phone h1 {
-    color: gray;
-    font-size: 20px;
-}
-
-.phone p {
-    font-size: 18px;
-    color: black
-}
-
-.facebook {
-    margin-top: 20px;
-    background-color: white;
-    width: 43%;
-    height: 70px;
-    margin-left: 25px;
-    padding-left: 10px;
-    padding-top: 10px;
-    float: left;
-}
-
-.facebook h1 {
-    color: gray;
-    font-size: 20px;
-}
-
-.fb-logo {
-    height: 40px;
-    width: 40px;
-    background-color: gray;
-    border-radius: 50%;
-    text-align: center;
-    cursor: pointer;
-    margin-top: 3px;
-}
-
-.fb-logo:hover {
-    background-color: blue;
-    transition: 0.5s;
-    transform: scale(1.1);
-}
-
-.fb-logo i {
-    font-size: 22px;
-    line-height: 40px;
-    color: white;
-}
-
+.phone,
 .address {
-    margin-top: 20px;
     background-color: white;
-    width: 43%;
+    width: 70%;
     height: 70px;
-    margin-left: 40px;
+    margin-left: 4%;
     padding-left: 10px;
     padding-top: 10px;
-    float: left;
 }
 
+.email h1,
+.phone h1,
+.messenger h1,
 .address h1 {
     color: gray;
     font-size: 20px;
 }
 
+.email p {
+    font-size: 18px;
+    color: blue
+}
+
 .phone p {
     font-size: 18px;
     color: black
+}
+
+.ms-logo a {
+    font-size: 22px;
+    line-height: 42px;
+    color: white;
+}
+
+.address p {
+    font-size: 18px;
+    color: black
+}
+
+.ms-logo {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 3px;
+    background-color: blueviolet;
+}
+
+.ms-logo:hover {
+    background-color: darkblue;
+    transition: 0.5s;
 }
 
 /*this is footer section*/
 footer {
     height: 17vh;
     background-color: black;
-    padding-left: 12%;
-    padding-right: 12%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .footer-holder {
@@ -426,59 +535,71 @@ footer {
     border-bottom: 1px solid gray;
 }
 
-#footer-add h1 {
+#footer-add h1,
+#footer-phone h1,
+#footer-email h1,
+#footer-socmed h1 {
     color: white;
     font-size: 15px;
     font-family: sans-serif;
 }
 
-#footer-add p {
-    color: white;
-}
-
-#footer-phone h1 {
-    color: white;
-    font-size: 15px;
-    font-family: sans-serif;
-}
-
-#footer-phone p {
-    color: white;
-    font-size: 15px;
-}
-
-#footer-email h1 {
-    color: white;
-    font-size: 15px;
-    font-family: sans-serif;
-}
-
+#footer-add p,
+#footer-phone p,
 #footer-email p {
     color: white;
     font-size: 15px;
 }
 
-#footer-facebook h1 {
-    color: white;
-    font-size: 15px;
-    font-family: sans-serif;
+.socmed-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .fb-logo2 {
-    height: 35px;
-    width: 35px;
+    height: 25px;
+    width: 25px;
+    background-color: darkblue;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.fb-logo2 i,
+.in-logo2 i,
+.gh-logo2 i {
+    color: white;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.in-logo2 {
+    height: 25px;
+    width: 25px;
     background-color: blue;
     border-radius: 50%;
     text-align: center;
     cursor: pointer;
     margin-top: 3px;
-    cursor: pointer;
 }
 
-.fb-logo2 i {
-    color: white;
-    font-size: 20px;
-    line-height: 35px;
+.gh-logo2 {
+    height: 25px;
+    width: 25px;
+    background-color: #404040;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.fb-logo2:hover,
+.in-logo2:hover,
+.gh-logo2:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 #footer-text {
@@ -490,8 +611,42 @@ footer {
     padding-top: 10px;
 }
 
-
 /*media query for responsive website*/
+@media (min-width: 2000px) {
+    #about {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    footer {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+
+}
+
+@media (max-width: 1999px) {
+    #about {
+        padding-left: 17%;
+        padding-right: 17%;
+    }
+
+    footer {
+        padding-left: 17%;
+        padding-right: 17%;
+    }
+}
+
+@media (max-width: 1500px) {
+    #about {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+
+}
+
 @media (max-width: 1200px) {
     #about {
         height: 1000px;
@@ -510,7 +665,6 @@ footer {
 
     .about-text p {
         font-size: 20px;
-        font-style: italic;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -523,18 +677,16 @@ footer {
         margin-right: 0%;
         margin-top: 20px;
     }
-    .pictext-container
-    {
+
+    .pictext-container {
         float: none;
     }
+
     .pic-mike {
         margin-top: 20px;
-        float: none;
-        text-align: center;
     }
 
     .about-text2 {
-        float: none;
         width: 100%;
         text-align: center;
     }
@@ -543,32 +695,19 @@ footer {
         height: 750px;
         padding-left: 12%;
         padding-right: 12%;
-        background-color: #404040;
-
-
-    }
-
-    .form-contact {
-        position: relative;
-        padding-left: 25px;
-        width: 97%;
-        text-align: center;
-
     }
 
     #error_m {
-        position: absolute;
-        background-color: red;
-        font-size: 15px;
-        text-align: center;
-        width: 20%;
-        border-radius: 50px;
-        top: 1%;
+        font-size: 13px;
+        width: 13%;
+        left: 5%;
+        top: 9%;
     }
 
     .form-contact form textarea {
         margin-top: 20px;
-        width: 97%;
+        width: 75%;
+        margin-left: 12%;
         height: 120px;
         padding-top: 10px;
         padding-left: 10px;
@@ -584,6 +723,10 @@ footer {
         height: 1000px;
     }
 
+    .email p {
+        font-size: 15px;
+    }
+
 }
 
 
@@ -594,6 +737,27 @@ footer {
         padding-right: 10px;
     }
 
+    .preview {
+        height: 20px;
+        width: 20px;
+    }
+
+    .preview a i {
+        color: red;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .gitcode {
+        height: 20px;
+        width: 20px;
+    }
+
+    .gitcode a i {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
     #contact {
         height: 950px;
     }
@@ -601,36 +765,42 @@ footer {
     .contact-info {
         padding-top: 10px;
         margin-top: 30px;
-        width: 99.5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
         height: 40%;
     }
 
     .form-contact {
         position: relative;
-        padding-left: 25px;
-        width: 97%;
-        text-align: center;
+        width: 100%;
+    }
 
+    .form-contact form input {
+        display: block;
+        margin-left: 30%;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+    .btn input[type="submit"] {
+        margin-left: 33%;
     }
 
     #error_m {
-        position: absolute;
-        background-color: red;
+
         font-size: 10px;
-        text-align: center;
-        width: 18%;
-        border-radius: 50px;
         top: 1%;
+        left: 11%;
     }
 
     .email {
         background-color: white;
         width: 43%;
         height: 70px;
-        margin-left: 26%;
+        margin-left: 28%;
         padding-left: 10px;
         padding-top: 10px;
-        float: none;
         margin-bottom: 20px;
     }
 
@@ -639,7 +809,7 @@ footer {
         font-size: 20px;
     }
 
-    .email a {
+    .email p {
         font-size: 11px;
         color: blue
     }
@@ -648,10 +818,9 @@ footer {
         background-color: white;
         width: 43%;
         height: 70px;
-        margin-left: 26%;
+        margin-left: 28%;
         padding-left: 10px;
         padding-top: 10px;
-        float: none;
     }
 
     .phone h1 {
@@ -664,39 +833,38 @@ footer {
         color: black
     }
 
-    .facebook {
+    .messenger {
         margin-top: 20px;
         background-color: white;
         width: 43%;
         height: 70px;
-        margin-left: 26%;
+        margin-left: 28%;
         padding-left: 10px;
         padding-top: 10px;
-        float: none;
     }
 
-    .facebook h1 {
+    .messenger h1 {
         color: gray;
         font-size: 20px;
     }
 
-    .fb-logo {
+    .ms-logo {
         height: 40px;
         width: 40px;
-        background-color: gray;
+        background-color: blue;
         border-radius: 50%;
         text-align: center;
         cursor: pointer;
         margin-top: 3px;
     }
 
-    .fb-logo:hover {
-        background-color: blue;
+    .ms-logo:hover {
+        background-color: darkblue;
         transition: 0.5s;
         transform: scale(1.1);
     }
 
-    .fb-logo i {
+    .ms-logo i {
         font-size: 22px;
         line-height: 40px;
         color: white;
@@ -707,10 +875,9 @@ footer {
         background-color: white;
         width: 43%;
         height: 70px;
-        margin-left: 26%;
+        margin-left: 28%;
         padding-left: 10px;
         padding-top: 10px;
-        float: none;
     }
 
     .address h1 {
@@ -722,8 +889,6 @@ footer {
         font-size: 11px;
         color: black
     }
-
-
 
     footer {
         height: 250px;
@@ -741,8 +906,12 @@ footer {
         margin-left: 50%;
     }
 
-    #footer-facebook {
+    #footer-socmed {
         margin-left: 50%;
+    }
+
+    .socmed-container {
+        margin-right: 30%;
     }
 }
 
@@ -752,14 +921,14 @@ footer {
         height: 1080px;
     }
 
-    .btncheck {
+    label #open {
         display: block;
     }
 
     ul {
         position: fixed;
         width: 100%;
-        height: 25%;
+        height: 35%;
         top: 75px;
         right: -100%;
         text-align: center;
@@ -772,8 +941,20 @@ footer {
         margin-top: 10px;
     }
 
+    .nav-bar ul li a:hover::after {
+        width: 0%;
+    }
+
     #check:checked~ul {
         right: 0;
+    }
+
+    #check:checked~label #open {
+        display: none;
+    }
+
+    #check:checked~label #close {
+        display: block;
     }
 
     .form-contact form input {
@@ -794,12 +975,7 @@ footer {
         height: 310px;
     }
 
-    .form-contact {
-        position: relative;
-    }
-
     #error_m {
-        position: absolute;
         font-size: 9px;
         width: 13%;
     }
@@ -815,7 +991,7 @@ footer {
         margin-top: 20px;
     }
 
-    #footer-facebook {
+    #footer-socmed {
         margin-left: 0;
         margin-top: 20px;
     }
@@ -837,24 +1013,48 @@ footer {
         margin-top: 20px;
         border-top: 1px solid gray;
     }
-
 }
 
 /*resolution if below 450px width*/
 @media (max-width: 450px) {
     #home {
-        width: 109%;
+        width: 120%;
         height: 500px;
     }
 
     #about {
-        width: 85%;
+        width: 95%;
         height: 840px;
+    }
+    #mywork {
+        width: 95%;
     }
 
     #contact {
-        width: 85%;
+        width: 95%;
         height: 850px;
+    }
+
+    .preview {
+        height: 15px;
+        width: 15px;
+    }
+
+    .preview a i {
+        color: red;
+        font-size: 8px;
+        line-height: 15px;
+    }
+
+    .gitcode {
+        height: 15px;
+        width: 15px;
+    }
+
+    .gitcode a i {
+        color: white;
+        font-size: 8px;
+        line-height: 15px;
     }
 
     footer {
@@ -866,7 +1066,7 @@ footer {
     }
 
     .form-contact form textarea {
-        margin-left: 20%;
+        margin-left: 14%;
         width: 70%;
         height: 100px;
     }
@@ -899,6 +1099,7 @@ footer {
     .about-text ol li {
         font-size: 13px;
     }
+
     .pic-mike img {
         width: 260px;
         height: 290px;
@@ -907,9 +1108,9 @@ footer {
     .about-text2 {
         width: 400px;
     }
-    .about-text2 p
-    {
-        margin-right: 12%;
+
+    .about-text2 p {
+        margin-right: 0%;
     }
 
     .about-text2 .creative {
@@ -920,8 +1121,8 @@ footer {
         font-size: 13px;
     }
 
-    .email a {
-        font-size: 8px;
+    .email p {
+        font-size: 10px;
     }
 
     .form-contact {
@@ -929,29 +1130,26 @@ footer {
     }
 
     #error_m {
-        position: absolute;
-        background-color: red;
         font-size: 8px;
-        text-align: center;
-        width: 15%;
-        border-radius: 50px;
-        left: 1%;
+        left: 10%;
         top: 1%;
     }
-
 }
 
 @media (max-width: 395px) {
     #home {
-        width: 114%;
+        width: 121%;
     }
 
     #about {
-        width: 90%;
+        width: 97%;
+    }
+    #mywork {
+        width: 97%;
     }
 
     #contact {
-        width: 90%;
+        width: 97%;
     }
 
     footer {
@@ -959,71 +1157,20 @@ footer {
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 300px) {
     #home {
-        width: 114.5%;
+        width: 145%;
     }
 
     #about {
-        width: 90.5%;
+        width: 121%;
+    }
+    #mywork {
+        width: 121%;
     }
 
     #contact {
-        width: 90.5%;
-    }
-
-    footer {
-        width: 90.5%;
-    }
-}
-
-@media (max-width: 375px) {
-    #home {
-        width: 119%;
-    }
-
-    #about {
-        width: 95%;
-    }
-
-    #contact {
-        width: 95%;
-    }
-
-    footer {
-        width: 95%;
-    }
-}
-
-@media (max-width: 360px) {
-    #home {
-        width: 123%;
-    }
-
-    #about {
-        width: 99%;
-    }
-
-    #contact {
-        width: 99%;
-    }
-
-    footer {
-        width: 99%;
-    }
-}
-
-@media (max-width: 320px) {
-    #home {
-        width: 136.7%;
-    }
-
-    #about {
-        width: 113%;
-    }
-
-    #contact {
-        width: 113%;
+        width: 121%;
     }
 
     footer {
@@ -1033,20 +1180,21 @@ footer {
 
 @media (max-width: 280px) {
     #home {
-        width: 157%;
+        width: 165%;
     }
 
     #about {
-        width: 133%;
+        width: 140%;
     }
 
-    .about-text2 p
-    {
-        margin-right: 8%;
+    .about-text2 p {
+        margin-right: 6%;
     }
-
+    #mywork {
+        width: 140%;
+    }
     #contact {
-        width: 133%;
+        width: 140%;
     }
 
     footer {
