@@ -322,7 +322,6 @@ label #close {
     transform: translateX(-50%);
     border: 10px solid;
     border-color: #000 #0000 #0000 #0000;
-
 }
 .preview:hover .preview-text {
     top: -130%;
@@ -990,30 +989,66 @@ footer {
         font-size: 8px;
         line-height: 15px;
     }
-    .code-text {
-        left: 83%;
-        top: -80%;
-        padding: 1px 3px;
-        color: white;
-        display: block;
-        font-size: 3px;
-    }
-    .code-text::before {
-        border: 5px solid;
-        border-color: #000 #0000 #0000 #0000;
-    }
     .preview-text {
-        left: 50%;
+        position: absolute;
+        left: 60%;
         top: -80%;
-        padding: 1px 3px;
+        padding: 2px 4px;
+        transform: translatex(-50%);
+        background-color: black;
         color: white;
         display: block;
-        font-size: 3px;
+        font-size: 5px;
+        text-align: center;
+        white-space: initial;
+        border-radius: 30px;
     }
     .preview-text::before {
-        border: 5px solid;
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        border: 3px solid;
         border-color: #000 #0000 #0000 #0000;
     }
+    .preview:hover .preview-text {
+        top: -80%;
+        display: block;
+    }
+
+    .code-text {
+        position: absolute;
+        left: 85%;
+        top: -80%;
+        padding: 2px 4px;
+        transform: translatex(-50%);
+        background-color: black;
+        color: white;
+        display: block;
+        font-size: 5px;
+        text-align: center;
+        white-space: initial;
+        border-radius: 20px;
+    }
+    .code-text::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        border: 3px solid;
+        border-color: #000 #0000 #0000 #0000;
+    }
+    .gitcode:hover .code-text {
+        top: -80%;
+        left: 60%;
+        display: block;
+    }
+    
+
+
+
     footer {
         width: 85%;
     }
