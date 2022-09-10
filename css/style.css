@@ -23,39 +23,45 @@ header {
     position: fixed;
     border-bottom: 1px solid darkslategray;
 }
+
 .logo {
     float: left;
     margin-top: 8px;
     padding: 8px;
     border-radius: 50px;
-    background-color: black;
+    background-color: #40404040;
     color: gold;
     font-family: segoe UI;
 }
+
 /*for mobile bar*/
 label #open,
 label #close {
-    color: white;
+    color: #c0c0c0;
     font-size: 30px;
     float: right;
     line-height: 75px;
     cursor: pointer;
     display: none;
 }
+
 #check {
     display: none;
     float: right;
     margin-top: 30px;
 }
+
 /*Navigation bar*/
 .nav-bar ul {
     float: right;
     padding-top: 25px;
 }
+
 .nav-bar ul li {
     display: inline;
     margin-left: 55px;
 }
+
 .nav-bar ul li a {
     position: relative;
     color: gray;
@@ -63,6 +69,7 @@ label #close {
     text-decoration: none;
     list-style: none;
 }
+
 .nav-bar ul li a::after {
     content: '';
     position: absolute;
@@ -73,9 +80,11 @@ label #close {
     bottom: -8px;
     transition: 0.5s;
 }
+
 .nav-bar ul li a:hover::after {
     width: 100%;
 }
+
 .nav-bar ul li a:hover {
     color: gold;
 }
@@ -85,14 +94,17 @@ label #close {
     height: 650px;
     background-color: #404040;
 }
+
 .mypc {
     display: flex;
     justify-content: center;
 }
+
 .mypc img {
     width: 400px;
     margin-top: 80px;
 }
+
 .home-text {
     text-align: center;
 }
@@ -106,6 +118,7 @@ label #close {
     font-size: 17px;
     color: whitesmoke;
 }
+
 .home-text span {
     font-size: 20px;
     text-transform: uppercase;
@@ -140,11 +153,10 @@ label #close {
     border: solid white 1px;
     transition: .4s;
 }
-
 /*this is about section*/
 #about {
     height: 650px;
-    background-color: darkgray;
+    background-color: #696969;
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 30px;
@@ -158,6 +170,7 @@ label #close {
     text-transform: uppercase;
     font-family: serif;
     letter-spacing: 2px;
+    color: #c0c0c0;
 }
 .about-text {
     margin-top: 20px;
@@ -166,12 +179,14 @@ label #close {
 }
 .about-text #hi-there {
     font-size: 50px;
+    font-style: italic;
     font-family: bold;
-    color: gold;
+    color: #ffd700;
 }
 .about-text p {
     font-size: 20px;
     font-style: italic;
+    color: #c0c0c0;
 }
 .about-text span {
     font-size: 25px;
@@ -215,7 +230,7 @@ label #close {
 }
 .about-text2 .creative {
     margin-top: 20px;
-    color: black;
+    color: #c0c0c0;
     font-size: 20px;
 }
 .about-text2 .creative a {
@@ -224,11 +239,10 @@ label #close {
     font-size: 20px;
     text-decoration: underline;
 }
-
-/* work sectiob */
+/* work section */
 #mywork {
     height: 650px;
-    background-color: gray;
+    background-color: #404040;
     padding-top: 30px;
     position: relative;
     padding-left: 12%;
@@ -242,12 +256,13 @@ label #close {
     text-transform: uppercase;
     font-family: serif;
     letter-spacing: 2px;
+    color: #c0c0c0;
 }
 .work-container {
     position: absolute;
     width: 40%;
-    height: 85%;
-    background-color: wheat;
+    height: max-content;
+    background-color: #696969;
     top: 10%;
     right: 30%;
 }
@@ -277,6 +292,7 @@ label #close {
     height: 35px;
     width: 35px;
     border-radius: 50%;
+    position: relative;
     text-align: center;
     cursor: pointer;
 }
@@ -284,6 +300,33 @@ label #close {
     color: red;
     font-size: 20px;
     line-height: 35px;
+}
+.preview-text {
+    position: absolute;
+    left: 50%;
+    padding: 5px 10px;
+    transform: translatex(-50%);
+    background-color: black;
+    color: white;
+    display: none;
+    font-size: 15px;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 50px;
+}
+.preview-text::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 10px solid;
+    border-color: #000 #0000 #0000 #0000;
+
+}
+.preview:hover .preview-text {
+    top: -130%;
+    display: block;
 }
 .gitcode {
     background-color: #404040;
@@ -298,11 +341,33 @@ label #close {
     font-size: 20px;
     line-height: 35px;
 }
-.preview:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
+.code-text {
+    position: absolute;
+    left: 50%;
+    padding: 5px 10px;
+    transform: translatex(-50%);
+    background-color: black;
+    color: white;
+    display: none;
+    font-size: 15px;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 50px;
 }
-.gitcode:hover {
+.code-text::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 10px solid;
+    border-color: #000 #0000 #0000 #0000;
+}
+.gitcode:hover .code-text {
+    top: -130%;
+    display: block;
+}
+.preview:hover, .gitcode:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
@@ -312,7 +377,7 @@ label #close {
     height: 650px;
     padding-left: 12%;
     padding-right: 12%;
-    background-color: #404040;
+    background-color: #696969;
     position: relative;
 
 }
@@ -328,6 +393,7 @@ label #close {
     text-transform: uppercase;
     font-family: serif;
     letter-spacing: 2px;
+    color: #c0c0c0;
 }
 .form-contact {
     width: 100%;
@@ -446,7 +512,6 @@ label #close {
     background-color: darkblue;
     transition: 0.5s;
 }
-
 /*this is footer section*/
 footer {
     height: 17vh;
@@ -528,7 +593,6 @@ footer {
     color: white;
     padding-top: 10px;
 }
-
 /*media query for responsive website*/
 @media (min-width: 2000px) {
     #about {
@@ -540,7 +604,6 @@ footer {
         padding-right: 20%;
     }
 }
-
 @media (max-width: 1999px) {
     #about {
         padding-left: 17%;
@@ -551,18 +614,15 @@ footer {
         padding-right: 17%;
     }
 }
-
 @media (max-width: 1500px) {
     #about {
         padding-left: 15%;
         padding-right: 15%;
     }
 }
-
 @media (max-width: 1200px) {
     #about {
         height: 1000px;
-        background-color: darkgray;
         padding-left: 12%;
         padding-right: 12%;
         padding-top: 30px;
@@ -630,10 +690,6 @@ footer {
 
 /*resolution if below 850px width*/
 @media (max-width: 850px) {
-    .about-text2 .creative {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
     .preview {
         height: 20px;
         width: 20px;
@@ -650,6 +706,62 @@ footer {
     .gitcode a i {
         font-size: 12px;
         line-height: 20px;
+    }
+    .preview-text {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        padding: 5px 10px;
+        transform: translatex(-50%);
+        background-color: black;
+        color: white;
+        display: none;
+        font-size: 10px;
+        text-align: center;
+        white-space: nowrap;
+        border-radius: 50px;
+    }
+    .preview-text::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        border: 7px solid;
+        border-color: #000 #0000 #0000 #0000;
+
+    }
+    .preview:hover .preview-text {
+        top: -160%;
+        display: block;
+    }
+    .code-text {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        padding: 5px 10px;
+        transform: translatex(-50%);
+        background-color: black;
+        color: white;
+        display: none;
+        font-size: 10px;
+        text-align: center;
+        white-space: nowrap;
+        border-radius: 50px;
+    }
+    .code-text::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        border: 7px solid;
+        border-color: #000 #0000 #0000 #0000;
+
+    }
+    .gitcode:hover .code-text {
+        top: -160%;
+        display: block;
     }
     #contact {
         height: 950px;
@@ -682,15 +794,13 @@ footer {
         left: 11%;
     }
     .email {
-        background-color: white;
         width: 43%;
         height: 70px;
         margin-left: 28%;
         padding-left: 10px;
         padding-top: 10px;
-        margin-bottom: 20px;
     }
-    .email h1 {
+    .email h1, .phone h1, .messenger h1, .address h1 {
         color: gray;
         font-size: 20px;
     }
@@ -698,34 +808,17 @@ footer {
         font-size: 11px;
         color: blue
     }
-    .phone {
-        background-color: white;
+    .phone, .messenger, .address {
         width: 43%;
         height: 70px;
         margin-left: 28%;
         padding-left: 10px;
         padding-top: 10px;
-    }
-    .phone h1 {
-        color: gray;
-        font-size: 20px;
+        margin-top: 20px;
     }
     .phone p {
         font-size: 18px;
         color: black
-    }
-    .messenger {
-        margin-top: 20px;
-        background-color: white;
-        width: 43%;
-        height: 70px;
-        margin-left: 28%;
-        padding-left: 10px;
-        padding-top: 10px;
-    }
-    .messenger h1 {
-        color: gray;
-        font-size: 20px;
     }
     .ms-logo {
         height: 40px;
@@ -746,19 +839,6 @@ footer {
         line-height: 40px;
         color: white;
     }
-    .address {
-        margin-top: 20px;
-        background-color: white;
-        width: 43%;
-        height: 70px;
-        margin-left: 28%;
-        padding-left: 10px;
-        padding-top: 10px;
-    }
-    .address h1 {
-        color: gray;
-        font-size: 20px;
-    }
     .address p {
         font-size: 11px;
         color: black
@@ -776,14 +856,15 @@ footer {
     #footer-phone {
         margin-left: 50%;
     }
+
     #footer-socmed {
         margin-left: 50%;
     }
+
     .socmed-container {
         margin-right: 30%;
     }
 }
-
 /*resolution if below 600px width*/
 @media (max-width: 600px) {
     #about {
@@ -805,6 +886,13 @@ footer {
     nav ul li a {
         display: block;
         margin-top: 10px;
+    }
+    .preview-text {
+        font-size: 7px;
+    }
+    .preview:hover .preview-text {
+        top: -130%;
+        display: block;
     }
     .nav-bar ul li a:hover::after {
         width: 0%;
@@ -872,14 +960,14 @@ footer {
         height: 500px;
     }
     #about {
-        width: 95%;
+        width: 96%;
         height: 840px;
     }
     #mywork {
-        width: 95%;
+        width: 96%;
     }
     #contact {
-        width: 95%;
+        width: 96%;
         height: 850px;
     }
     .preview {
@@ -902,6 +990,30 @@ footer {
         font-size: 8px;
         line-height: 15px;
     }
+    .code-text {
+        left: 83%;
+        top: -80%;
+        padding: 1px 3px;
+        color: white;
+        display: block;
+        font-size: 3px;
+    }
+    .code-text::before {
+        border: 5px solid;
+        border-color: #000 #0000 #0000 #0000;
+    }
+    .preview-text {
+        left: 50%;
+        top: -80%;
+        padding: 1px 3px;
+        color: white;
+        display: block;
+        font-size: 3px;
+    }
+    .preview-text::before {
+        border: 5px solid;
+        border-color: #000 #0000 #0000 #0000;
+    }
     footer {
         width: 85%;
     }
@@ -923,6 +1035,7 @@ footer {
     .about-text #hi-there {
         font-size: 40px;
     }
+
     .about-gif img {
         height: 330px;
     }
@@ -940,7 +1053,7 @@ footer {
         height: 290px;
     }
     .about-text2 {
-        width: 400px;
+        width: 100%;
     }
     .about-text2 p {
         margin-right: 0%;
@@ -963,22 +1076,50 @@ footer {
         top: 1%;
     }
 }
-
 @media (max-width: 395px) {
     #home {
-        width: 121%;
+        width: 126%;
     }
-    #about {
-        width: 97%;
-    }
-    #mywork {
-        width: 97%;
-    }
-    #contact {
-        width: 97%;
+    #about, #mywork, #contact {
+        width: 102%;
     }
     footer {
-        width: 90%;
+        width: 92%;
+    }
+}
+
+@media (max-width: 345px) {
+    #home {
+        width: 127%;
+    }
+    #about, #mywork, #contact {
+        width: 103%;
+    }
+    footer {
+        width: 93%;
+    }
+}
+@media (max-width: 340px) {
+    #home {
+        width: 130%;
+    }
+    #about, #mywork, #contact {
+        width: 105%;
+    }
+    footer {
+        width: 95%;
+    }
+}
+
+@media (max-width: 320px) {
+    #home {
+        width: 136%;
+    }
+    #about, #mywork, #contact {
+        width: 112%;
+    }
+    footer {
+        width: 102%;
     }
 }
 
@@ -986,38 +1127,34 @@ footer {
     #home {
         width: 145%;
     }
-    #about {
-        width: 121%;
-    }
-    #mywork {
-        width: 121%;
-    }
-    #contact {
+    #about, #mywork, #contact {
         width: 121%;
     }
     footer {
-        width: 113%;
+        width: 111%;
     }
 }
 
-@media (max-width: 280px) {
+@media (max-width: 285px) {
     #home {
-        width: 165%;
+        width: 152%;
     }
-    #about {
-        width: 140%;
-    }
-    .about-text2 p {
-        margin-right: 6%;
-    }
-    #mywork {
-        width: 140%;
-    }
-    #contact {
-        width: 140%;
+    #about, #mywork, #contact {
+        width: 128%;
     }
     footer {
-        width: 133%;
+        width: 118%;
+    }
+}
+@media (max-width: 280px) {
+    #home {
+        width: 168%;
+    }
+    #about, #mywork, #contact {
+        width: 144%;
+    }
+    footer {
+        width: 134%;
     }
 }
 
