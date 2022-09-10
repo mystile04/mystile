@@ -992,13 +992,13 @@ footer {
     .preview-text {
         position: absolute;
         left: 60%;
-        top: -80%;
+        top: -110%;
         padding: 2px 4px;
         transform: translatex(-50%);
         background-color: black;
         color: white;
         display: block;
-        font-size: 5px;
+        font-size: 3px;
         text-align: center;
         white-space: initial;
         border-radius: 30px;
@@ -1013,20 +1013,19 @@ footer {
         border-color: #000 #0000 #0000 #0000;
     }
     .preview:hover .preview-text {
-        top: -80%;
+        top: -110%;
         display: block;
     }
-
     .code-text {
         position: absolute;
         left: 85%;
-        top: -80%;
+        top: -110%;
         padding: 2px 4px;
         transform: translatex(-50%);
         background-color: black;
         color: white;
         display: block;
-        font-size: 5px;
+        font-size: 3px;
         text-align: center;
         white-space: initial;
         border-radius: 20px;
@@ -1041,7 +1040,7 @@ footer {
         border-color: #000 #0000 #0000 #0000;
     }
     .gitcode:hover .code-text {
-        top: -80%;
+        top: -110%;
         left: 60%;
         display: block;
     }
